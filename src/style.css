@@ -1,0 +1,26 @@
+.header-nav-btns{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: 1.5rem;
+    margin:0;
+    padding: 0;
+}
+li{
+    cursor: pointer;
+}
+.header{
+    padding: 8px 16px;
+    background-color: antiquewhite;
+}
+li:hover{
+    scale: 1.05;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
