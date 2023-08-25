@@ -3,8 +3,11 @@
 // // restaurantImg.src = jpg
 
 export default function showHome(){
+
     console.log('home contents')
     const content = document.querySelector('.content')
+    content.classList.add('home-contents')
+    content.classList.remove('about-contents')
     content.innerHTML= ''
     const homeHeader = document.createElement('div')
     homeHeader.classList.add('home-header')
