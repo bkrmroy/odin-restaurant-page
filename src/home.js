@@ -1,13 +1,10 @@
-// import jpg from './restaurant-home-img.jpg';
-// // const restaurantImg =new Image()
-// // restaurantImg.src = jpg
-
 export default function showHome(){
 
     console.log('home contents')
     const content = document.querySelector('.content')
     content.classList.add('home-contents')
     content.classList.remove('about-contents')
+    content.classList.remove('menu-contents')
     content.innerHTML= ''
     const homeHeader = document.createElement('div')
     homeHeader.classList.add('home-header')
@@ -33,7 +30,5 @@ export default function showHome(){
     imgContainer.textContent = 'work'
     imgContainer.appendChild(document.createElement('div'))
 
-
-    // imgContainer.appendChild(restaurantImg)
     content.appendChild(imgContainer)
 }

@@ -5,6 +5,8 @@ export default function showAbout(){
     const content = document.querySelector('.content')
     content.classList.remove('home-contents')
     content.classList.add('about-contents')
+    content.classList.remove('menu-contents')
+
     const aboutPage = document.createElement('div')
     aboutPage.classList.add('about-page')
     content.innerHTML= ''
